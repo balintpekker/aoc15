@@ -9,16 +9,16 @@
 	  
     switch($seq) {
       case '^':
-        $start[] = [$start[$i][0] + 1, $start[$i][1]];
+	$start[] = [$start[$i][0] + 1, $start[$i][1]];
 	break;
       case 'v':
-        $start[] = [$start[$i][0] - 1, $start[$i][1]];
+	$start[] = [$start[$i][0] - 1, $start[$i][1]];
 	break;
       case '<':
-        $start[] = [$start[$i][0], $start[$i][1] - 1];
+	$start[] = [$start[$i][0], $start[$i][1] - 1];
 	break;
       case '>':
-        $start[] = [$start[$i][0], $start[$i][1] + 1];
+	$start[] = [$start[$i][0], $start[$i][1] + 1];
 	break;
       }
   }
@@ -43,16 +43,16 @@
     switch($seq) {
       case '^':
 	$start[$suffix][$i] = [$end[0] + 1, $end[1]];
-        break;
+	break;
       case 'v':
-        $start[$suffix][$i] = [$end[0] - 1, $end[1]];
-        break;
+	$start[$suffix][$i] = [$end[0] - 1, $end[1]];
+	break;
       case '<':
-        $start[$suffix][$i] = [$end[0], $end[1] - 1];
-        break;
+	$start[$suffix][$i] = [$end[0], $end[1] - 1];
+	break;
       case '>':
-        $start[$suffix][$i] = [$end[0], $end[1] + 1];
-        break;
+	$start[$suffix][$i] = [$end[0], $end[1] + 1];
+	break;
     }
   }
   
